@@ -1,0 +1,17 @@
+extends ../layout/base
+
+block variables
+    //подключаем основу для страницы и выводим в нее данные
+    - var title='Webpack-template with Pug';
+    - var description='Description for webpack + Pug';
+    - var pageClass='index-page';
+
+block content
+
+    .container
+        div(class="l-row")
+            div(class="img-example")
+                img(src="/assets/img/pinguin.jpg")
+
+block script
+

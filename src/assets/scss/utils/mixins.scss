@@ -1,0 +1,58 @@
+@import '../utils/vars';
+@import '../components/phones-list';
+
+.to{
+	&-item {
+		&:not(&:last-child) {
+			margin-bottom: 20px;
+		}
+		&.active{
+			.to-list{
+				display: block;
+			}
+			.to-icon{
+				transform: rotate(180deg);
+			}
+		}
+	}
+
+	&__title{
+		font-size: 20px;
+		font-weight: 600;
+		margin-bottom: 10px;
+		display: flex;
+		align-items: center;
+		@media(max-width: $xs - 1){
+			font-size: 16px;
+				}
+	}
+	&-icon{
+		margin-left: 5px;
+		transform: rotate(0);
+		transition: all ease .3s;
+		margin-right: 4px;
+		display: none;
+		@media(max-width: $sm - 1){
+			display: block;
+		}
+	}
+
+	&-list{
+		@media(max-width: $sm - 1){
+			display: none;
+				}
+		&__item{
+			display: flex;
+			align-items: center;
+			&:not(&:last-child) {
+				margin-bottom: 6px;
+			}
+
+		}
+		&__icon{
+			margin-right: 5px;
+		}
+	}
+
+
+}

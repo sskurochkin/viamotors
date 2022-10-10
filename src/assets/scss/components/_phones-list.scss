@@ -1,0 +1,16 @@
+.phones-list{
+	&__item{
+		&:first-child{
+			margin-bottom: 8px;
+		}
+	}
+	&__link{
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+	}
+	&__icon{
+		margin-right: 5px;
+	}
+}
+
