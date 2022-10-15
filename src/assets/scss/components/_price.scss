@@ -99,4 +99,32 @@
 			}
 		}
 	}
+	&-name{
+		font-size: 12px;
+		width: 200px;
+		flex-shrink: 0;
+	}
+	&-value{
+		font-size: 12px;
+		flex-grow: 1;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&__item{
+			width: 60px;
+		}
+	}
+}
+.price-table__table{
+	//margin-top: 40px;
+	overflow: scroll;
+	.table__body{
+		width: 750px;
+	}
+	.table__header {
+		background-color: #5d89d6;
+	}
+}
+.table{
+	//overflow: auto;
 }
