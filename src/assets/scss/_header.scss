@@ -1,13 +1,15 @@
 @import 'utils/vars';
 @import 'components/burger';
-.header{
+
+.header {
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	z-index: 100;
 	background-color: #fff;
-	&-top{
+
+	&-top {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -16,7 +18,7 @@
 			padding: 10px 0;
 		}
 
-		&__left{
+		&__left {
 			display: flex;
 			align-items: center;
 			-webkit-column-gap: 40px;
@@ -28,25 +30,34 @@
 				column-gap: 0;
 			}
 		}
-		&__mid{
+
+		&__mid {
 			display: flex;
 			align-items: center;
-			span{
+			transition: all ease .3s;
+
+			&:hover {
+				cursor: pointer;
+				color: $c-primary;
+			}
+
+			span {
 				margin-left: 5px;
 			}
+
 			@media(max-width: $sm - 1) {
 				display: none;
 			}
 		}
 	}
 
-	&-descr{
+	&-descr {
 		align-self: flex-start;
 	}
 
-	&-logo{
+	&-logo {
 		//flex: 0 0 200px;
-		&__link{
+		&__link {
 			max-width: 200px;
 			display: flex;
 			flex-direction: column;
@@ -56,15 +67,17 @@
 				max-width: 140px;
 			}
 
-			img{
+			img {
 				width: 100%;
 				height: 100%;
 				object-fit: contain;
-				&:last-child{
+
+				&:last-child {
 					@media(max-width: $sm - 1) {
 						display: none;
 					}
 				}
+
 				@media(max-width: $xs - 1) {
 					display: none;
 				}
@@ -72,11 +85,12 @@
 		}
 	}
 
-	&-bottom{
+	&-bottom {
 		background-color: $c-header;
 
 	}
-	&-nav{
+
+	&-nav {
 		position: relative;
 		height: 80px;
 		display: flex;
@@ -92,7 +106,7 @@
 		@media(max-width: $sm - 1) {
 			margin: 0 -10px;
 			height: 50px;
-			.burger-icon{
+			.burger-icon {
 				position: absolute;
 				left: 10px;
 				top: 0;
@@ -100,7 +114,8 @@
 				margin: auto 0;
 			}
 		}
-		&__list{
+
+		&__list {
 			display: flex;
 			-webkit-column-gap: 40px;
 			-moz-column-gap: 40px;
@@ -111,9 +126,9 @@
 				column-gap: 32px;
 			}
 			@media(max-width: $lg - 1) {
-			-webkit-column-gap: 24px;
-			-moz-column-gap: 24px;
-			column-gap: 24px;
+				-webkit-column-gap: 24px;
+				-moz-column-gap: 24px;
+				column-gap: 24px;
 			}
 			@media(max-width: $sm - 1) {
 				opacity: 0;
@@ -131,20 +146,23 @@
 				transform: translateX(-100%);
 				transition: all ease .3s;
 
-		}
+			}
 
 		}
-		&.active{
+
+		&.active {
 			//margin: 0 -10px;
 			//padding: 0 10px;
-			.burger-icon{
+			.burger-icon {
 				//margin-left: 10px;
 			}
-			.header-nav__list{
+
+			.header-nav__list {
 				visibility: visible;
 				opacity: 1;
 				transform: translateX(0);
-				&:before{
+
+				&:before {
 					content: '';
 					width: 130%;
 					height: 100%;
@@ -157,18 +175,19 @@
 			}
 		}
 
-		&__item{
+		&__item {
 			display: flex;
 			align-items: center;
 			@media(max-width: $sm - 1) {
 				padding: 5px;
 				transition: all ease .3s;
-				&:hover{
+				&:hover {
 					background-color: #6d6d6d;
 				}
 			}
 		}
-		&__link{
+
+		&__link {
 			padding: 5px 10px;
 			@media(max-width: $md - 1) {
 				padding: 5px;

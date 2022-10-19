@@ -47,6 +47,10 @@ section{
 	padding: 40px 0 30px;
 	position: relative;
 	margin-bottom: 60px;
+	@media (max-width: $md - 1) {
+		margin-bottom: 40px;
+		padding-top: 30px;
+	}
 	@media(max-width: $xs - 1){
 		padding: 20px 0;
 		margin-bottom: 30px;

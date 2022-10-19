@@ -1,3 +1,5 @@
+@import '../utils/vars';
+
 .phones-list{
 	&__item{
 		&:first-child{
@@ -8,6 +10,11 @@
 		display: flex;
 		flex-direction: row-reverse;
 		align-items: center;
+		transition: all ease .3s;
+		&:hover{
+			cursor: pointer;
+			color: $c-primary;
+		}
 	}
 	&__icon{
 		margin-right: 5px;

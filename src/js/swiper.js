@@ -3,6 +3,10 @@ window.addEventListener('load', function (event) {
   const swiper = new Swiper('.swiper', {
     // Optional parameters
     loop: true,
+    lazy: true,
+    autoplay:{
+      delay: 3000
+    },
 
     // If we need pagination
     pagination: {
