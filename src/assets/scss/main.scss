@@ -59,6 +59,7 @@ section{
 .section-title{
 	margin-bottom: 35px;
 	padding-bottom: 5px;
+	text-align: center;
 	border-bottom: 3px solid $c-primary;
 	h2{
 		display: inline-block;
@@ -198,6 +199,7 @@ section{
 	color: #fff;
 
 	.section-title{
+		text-align: left;
 		border-bottom: none;
 		h2{
 			color: #fff;

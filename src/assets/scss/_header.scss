@@ -18,6 +18,23 @@
 			padding: 10px 0;
 		}
 
+		&__schedule{
+			.contacts-body__item-title{
+				color: $c-text;
+
+				p{
+					color: $c-primary;
+					text-transform: none;
+					&:first-child{
+						margin-top: 5px;
+					}
+				}
+			}
+			@media (max-width: $lg - 1) {
+				display: none;
+			}
+		}
+
 		&__left {
 			display: flex;
 			align-items: center;

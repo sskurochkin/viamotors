@@ -2,9 +2,9 @@
 
 .services-p {
 	padding-top: 250px;
-	@media(max-width: $sm - 1){
+	@media(max-width: $sm - 1) {
 		padding-top: 150px;
-			}
+	}
 
 	&__descr {
 		text-align: center;
@@ -14,14 +14,15 @@
 	}
 
 	&__wrapper {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 40px 60px;
-
+		display: flex;
+		flex-direction: column;
+		row-gap: 60px;
+		max-width: 900px;
+		margin: auto;
 		margin-bottom: 60px;
 
-		@media(max-width: $lg - 1) {
-			grid-template-columns: 1fr;
+		@media(max-width: $sm - 1) {
+			row-gap: 40px;
 		}
 	}
 
@@ -32,6 +33,15 @@
 		-webkit-column-gap: 24px;
 		-moz-column-gap: 24px;
 		column-gap: 24px;
+
+		&:nth-child(even) {
+			@media (min-width: $sm) {
+				.services-p__card-descr {
+					order: 2;
+				}
+			}
+
+		}
 
 		@media(max-width: $sm - 1) {
 			grid-template-columns: 1fr;
