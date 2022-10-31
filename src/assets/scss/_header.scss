@@ -111,6 +111,7 @@
 		position: relative;
 		height: 80px;
 		display: flex;
+		justify-content: space-between;
 		align-items: center;
 		color: #fff;
 		font-size: 18px;
@@ -134,6 +135,8 @@
 
 		&__list {
 			display: flex;
+			width: 100%;
+			justify-content: space-between;
 			-webkit-column-gap: 40px;
 			-moz-column-gap: 40px;
 			column-gap: 40px;
